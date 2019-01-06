@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.VenueFragment">
+
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/progress_layout" />
+
+    <include
+        android:id="@+id/no_record_venue"
+        android:visibility="gone"
+        layout="@layout/norecord_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/layout_venue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lv_venue_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/venue_name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_venue_name"
+                    style="@style/infoTabItemValue"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_venue_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/venue_address" />
+
+                <TextView
+                    android:id="@+id/tv_venue_address"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_venue_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/venue_city"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_venue_city"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_venue_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/venue_number" />
+
+                <TextView
+                    android:id="@+id/tv_venue_number"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_venue_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/venue_hours" />
+
+                <TextView
+                    android:id="@+id/tv_venue_hours"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_venue_general_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/venue_general_rule" />
+
+                <TextView
+                    android:id="@+id/tv_venue_general_rule"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_venue_child_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/venue_child_rule" />
+
+                <TextView
+                    android:id="@+id/tv_venue_child_rule"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

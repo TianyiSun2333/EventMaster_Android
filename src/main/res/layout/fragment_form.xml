@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FormFragment"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/form_keyword" />
+        <TextView
+            android:id="@+id/tv_alert_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/form_error"
+            android:visibility="gone"
+            android:textColor="@color/colorAlert"/>
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/et_keyword_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/form_hint_keyword"
+            android:inputType="text"
+            android:maxLines="1"
+            android:completionThreshold="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/form_category" />
+        <Spinner
+            android:id="@+id/spinner_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/form_distance" />
+        <EditText
+            android:id="@+id/et_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/form_hint_distance"
+            android:inputType="number"
+            android:maxLines="1"
+            />
+        <Spinner
+            android:id="@+id/spinner_units"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/form_from" />
+        <RadioGroup
+            android:id="@+id/radio_group_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radio_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/form_rb_current"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/form_rb_other"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tv_alert_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/form_error"
+            android:visibility="gone"
+            android:textColor="@color/colorAlert"/>
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/form_hint_address"
+            android:maxLines="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SEARCH"
+                ></Button>
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLEAR"
+                ></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

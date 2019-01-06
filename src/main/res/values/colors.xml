@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4AA5E8</color>
+    <color name="colorPrimaryDark">#387fc2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAlert">#FF0000</color>
+    <color name="colorUpcomingName">#008ae6</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorUpcomingArtist">#e65c00</color>
+</resources>

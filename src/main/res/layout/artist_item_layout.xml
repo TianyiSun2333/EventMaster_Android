@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_artist_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="2342345345"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/lv_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lv_artist_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/artist_name"/>
+                <TextView
+                    android:id="@+id/tv_artist_name"
+                    style="@style/infoTabItemValue"
+                    android:text="@string/artist_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_artist_followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/artist_followers"/>
+                <TextView
+                    android:id="@+id/tv_artist_followers"
+                    style="@style/infoTabItemValue"
+                    android:text="@string/artist_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_artist_popularity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/artist_popularity"/>
+                <TextView
+                    android:id="@+id/tv_artist_popularity"
+                    style="@style/infoTabItemValue"
+                    android:text="@string/artist_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_artist_spotify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/artist_spotify"/>
+                <TextView
+                    android:id="@+id/tv_artist_spotify"
+                    style="@style/infoTabItemValue"
+                    android:text="@string/artist_name"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fillViewport="true">-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_view_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="2000dp" />
+    <!--</ScrollView>-->
+
+</LinearLayout>

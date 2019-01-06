@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.InfoFragment" >
+
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/progress_layout" />
+
+    <include
+        android:id="@+id/no_record"
+        android:visibility="gone"
+        layout="@layout/norecord_layout" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/lv_teams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/info_teams"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_teams"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/info_venue" />
+
+                <TextView
+                    android:id="@+id/tv_venue"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/info_time"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/info_category" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/info_price" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_ticket_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/info_ticket_status" />
+
+                <TextView
+                    android:id="@+id/tv_ticket_status"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/info_buy" />
+
+                <TextView
+                    android:id="@+id/tv_buy"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_seat_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/infoTabItemKey"
+                    android:text="@string/info_seat_map" />
+
+                <TextView
+                    android:id="@+id/tv_seat_map"
+                    style="@style/infoTabItemValue" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
